@@ -1,16 +1,31 @@
-# cstore
+# Cupertino Store (cstoreb)
 
-A new Flutter project.
+A Flutter e-commerce app with Cupertino (iOS-style) design and Provider state management.
+
+## Features
+
+- Product catalog with category filtering
+- Search functionality
+- Shopping cart with quantity management
+- iOS-native Cupertino UI
+- Bottom tab navigation
+
+## Tech Stack
+
+- Flutter 3.x / Dart 3.x
+- Cupertino widgets
+- Provider for state management
+- intl for formatting
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Testing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter test
+```
