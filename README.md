@@ -1,58 +1,31 @@
 # Cupertino Store (cstoreb)
 
-App e-commerce con diseño iOS nativo (Cupertino), catálogo de 38 productos boutique, búsqueda y carrito de compras.
+A Flutter e-commerce app with Cupertino (iOS-style) design and Provider state management.
 
-## Stack
+## Features
 
-| Capa | Tecnología |
-|------|-----------|
-| Framework | Flutter 3.x / Dart 3.x |
-| UI | Cupertino (iOS-style) |
-| Estado | Provider (ChangeNotifier) |
-| Formateo | intl (moneda) |
-| CI/CD | GitHub Actions |
+- Product catalog with category filtering
+- Search functionality
+- Shopping cart with quantity management
+- iOS-native Cupertino UI
+- Bottom tab navigation
 
-## Funcionalidades
+## Tech Stack
 
-- Catálogo de 38 productos en 3 categorías (accessories, clothing, home)
-- Filtrado por categoría con chips
-- Búsqueda en tiempo real por nombre de producto
-- Carrito de compras con control de cantidades
-- Resumen de orden: subtotal, envío ($7/artículo), impuesto (6%), total
-- Formulario de checkout con campos de nombre, correo, dirección y selector de fecha/hora
-- Diseño 100% Cupertino: CupertinoApp, CupertinoTabScaffold, CupertinoListTile, etc.
-- Pruebas unitarias integrales (13 tests: modelos, carrito, costos, búsqueda, filtros)
+- Flutter 3.x / Dart 3.x
+- Cupertino widgets
+- Provider for state management
+- intl for formatting
 
-## Estructura
-
-```
-lib/
-├── main.dart           # Entry point + CupertinoApp
-├── models.dart         # Product model + Category enum
-├── repository.dart     # Catálogo estático (38 productos)
-├── statemodel.dart     # ChangeNotifier (carrito, filtros, búsqueda)
-├── productlist.dart    # Lista de productos con categorías
-├── search.dart         # Búsqueda en tiempo real
-├── cart.dart           # Carrito + checkout form
-└── styles.dart         # Constantes de color y texto
-```
-
-## Inicio rápido
+## Getting Started
 
 ```bash
 flutter pub get
 flutter run
 ```
 
-## Pruebas
+## Testing
 
 ```bash
 flutter test
 ```
-
-## Notas
-
-- Inspirado en el demo Shrine de Flutter, reimplementado en Cupertino
-- Todos los datos son hardcoded (sin backend)
-- Paleta rosa (#FCE9F1), teal (#73BBC9), dorado (#DAA520)
-- Orientación bloqueada a retrato
